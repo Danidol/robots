@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  background: fixed;
+  background-image: linear-gradient(to top, rgb(72, 160, 163), rgb(23, 33, 82));
+}
+h1 {
+  text-align: center;
+  font-family: "Bungee Shade", cursive;
+  font-size: 4rem;
+  color: rgb(75, 190, 171);
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.search-area {
+  border-bottom: solid 2px rgb(13, 14, 20);
+}
+
+.card {
+  background-color: rgb(75, 190, 171);
+  color: rgb(255, 255, 255);
+  margin: 0 20px;
+  margin-top: 30px;
+  padding: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 3px rgb(56, 61, 95);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 10px 6px rgb(56, 61, 95);
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  font-size: 1em;
+  padding: 16px;
+  background-color: rgba(49, 155, 155, 0.733);
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+input:focus,
+:active {
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
